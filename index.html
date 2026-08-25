@@ -1,0 +1,157 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="WorkTime — учёт рабочего времени для магазина, офиса, склада и водителей. Табель, зарплата и общая сводка.">
+    <title>WorkTime — учёт рабочего времени</title>
+    <link rel="stylesheet" href="css/landing.css">
+</head>
+<body>
+
+    <!-- Шапка лендинга -->
+    <header class="header">
+        <div class="container header-inner">
+            <a class="logo" href="index.html">⏱ <span>WorkTime</span></a>
+            <nav class="nav">
+                <a href="#features">Возможности</a>
+                <a href="#how">Как работать</a>
+                <a href="#departments">Отделы</a>
+                <a class="btn btn-primary" href="app.html">Открыть табель</a>
+            </nav>
+        </div>
+    </header>
+
+    <!-- Приветственный экран -->
+    <section class="hero">
+        <div class="container hero-inner">
+            <p class="eyebrow">Локальный табель без сервера</p>
+            <h1>Учёт рабочего времени<br>для всей команды</h1>
+            <p class="lead">
+                Четыре отдела и общая сводка: явки, опоздания, зарплата, штрафы и премии.
+                Данные хранятся в вашем браузере — откройте файл и сразу можно работать.
+            </p>
+            <div class="hero-actions">
+                <a class="btn btn-primary btn-lg" href="app.html">Начать работу</a>
+                <a class="btn btn-ghost btn-lg" href="#how">Как это устроено</a>
+            </div>
+            <p class="hero-hint">Стандартные PIN: 1111 магазин · 2222 офис · 3333 склад · 4444 водители · 5555 общая</p>
+        </div>
+    </section>
+
+    <!-- Возможности -->
+    <section id="features" class="section">
+        <div class="container">
+            <h2>Что умеет WorkTime</h2>
+            <p class="section-lead">Всё, что нужно для ежедневного табеля и месячной сверки зарплаты.</p>
+            <div class="cards">
+                <article class="card">
+                    <div class="icon">📅</div>
+                    <h3>Табель месяца</h3>
+                    <p>Явка, опоздание, больничный, отпуск и выходной. Часы и минуты опоздания прямо в ячейке дня.</p>
+                </article>
+                <article class="card">
+                    <div class="icon">👤</div>
+                    <h3>ФИО и подбор</h3>
+                    <p>У каждого отдела свой список. Сотрудник магазина не появляется в табеле склада или офиса.</p>
+                </article>
+                <article class="card">
+                    <div class="icon">💰</div>
+                    <h3>Зарплата</h3>
+                    <p>Начисление по часам и ставке, удержание за опоздание, штрафы, премии, авансы и сумма продуктов.</p>
+                </article>
+                <article class="card">
+                    <div class="icon">📊</div>
+                    <h3>Общая сводка</h3>
+                    <p>Списки отделов собираются автоматически. У каждого отдела свои люди, без пересечений.</p>
+                </article>
+                <article class="card">
+                    <div class="icon">📈</div>
+                    <h3>Анализ</h3>
+                    <p>Закладки месяцев, сравнение с соседними периодами, дисциплина по опозданиям.</p>
+                </article>
+                <article class="card">
+                    <div class="icon">💾</div>
+                    <h3>Резервная копия</h3>
+                    <p>Скачайте JSON или CSV, чтобы не потерять табель при очистке браузера.</p>
+                </article>
+            </div>
+        </div>
+    </section>
+
+    <!-- Как работать -->
+    <section id="how" class="section section-alt">
+        <div class="container">
+            <h2>Три шага до первого табеля</h2>
+            <ol class="steps">
+                <li>
+                    <strong>Заведите ФИО</strong>
+                    <span>Откройте нужный отдел и вкладку «ФИО сотрудника». Список этого отдела отдельный.</span>
+                </li>
+                <li>
+                    <strong>Выберите в табель</strong>
+                    <span>В графе «Сотрудник» подберите человека из списка — строка месяца откроется сразу.</span>
+                </li>
+                <li>
+                    <strong>Сверьте зарплату</strong>
+                    <span>Войдите в «Общую»: часы подтянутся сами, останется ввести штрафы, премии, авансы и продукты.</span>
+                </li>
+            </ol>
+        </div>
+    </section>
+
+    <!-- Отделы -->
+    <section id="departments" class="section">
+        <div class="container">
+            <h2>Четыре отдела и общая таблица</h2>
+            <p class="section-lead">Каждый вход со своим PIN. Настройки и PIN можно сменить после входа.</p>
+            <div class="dept-grid">
+                <a class="dept" href="app.html">
+                    <h3>Магазин</h3>
+                    <p>PIN 1111</p>
+                </a>
+                <a class="dept" href="app.html">
+                    <h3>Офис</h3>
+                    <p>PIN 2222</p>
+                </a>
+                <a class="dept" href="app.html">
+                    <h3>Склад</h3>
+                    <p>PIN 3333</p>
+                </a>
+                <a class="dept" href="app.html">
+                    <h3>Водители</h3>
+                    <p>PIN 4444</p>
+                </a>
+                <a class="dept dept-summary" href="app.html">
+                    <h3>Общая</h3>
+                    <p>PIN 5555 · сводка и зарплата</p>
+                </a>
+            </div>
+        </div>
+    </section>
+
+    <!-- Формула -->
+    <section class="section section-alt">
+        <div class="container formula">
+            <h2>Как считается выплата</h2>
+            <p>
+                <strong>К выплате</strong> =
+                часы × ставка
+                − удержание за опоздание
+                − штрафы
+                + премии
+                − авансы.
+            </p>
+            <p class="muted">Сумма продуктов учитывается отдельно. Сотрудники отделов не пересекаются: у магазина, офиса, склада и водителей свои списки.</p>
+        </div>
+    </section>
+
+    <footer class="footer">
+        <div class="container footer-inner">
+            <span>WorkTime · учёт рабочего времени</span>
+            <a class="btn btn-primary" href="app.html">Открыть табель</a>
+        </div>
+    </footer>
+
+</body>
+</html>
